@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery of NightCity</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="gallerycss.css">
+</head>
+<body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-black bg-black">
+            <a class="navbar-brand" href="#galleryNightCty">Gallery of NightCity</a>
+
+            <a class="navbar-brand" href="#about">About</a>
+        </nav>
+    </header>
+
+
+    <b><h1 class="neonText" style="text-align:center">NightCity CyberPunk 2077</h1></b>
+
+<div class="galleryNightCty">
+  <div class="column">
+    <img src="C:\Users\user\Downloads\cyberpunk1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="C:\Users\user\Downloads\cyberpunk2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="C:\Users\user\Downloads\cyberpunk3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="C:\Users\user\Downloads\cyberpunk4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="C:\Users\user\Downloads\cyberpunk1.jpg" style="width:100%" width="auto">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="C:\Users\user\Downloads\cyberpunk2.jpg" style="width:100%" width="auto">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="C:\Users\user\Downloads\cyberpunk3.jpg" style="width:100%" width="auto">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="C:\Users\user\Downloads\cyberpunk4.jpg" style="width:100%" width="auto">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    <div class="column">
+      <img class="demo cursor" src="C:\Users\user\Downloads\cyberpunk1.jpg" style="width:100%" height="100px" width="auto" onclick="currentSlide(1)" alt="Downtown NightCity">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="C:\Users\user\Downloads\cyberpunk2.jpg" style="width:100%" height="100px" width="auto" onclick="currentSlide(2)" alt="NightCity Underground">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="C:\Users\user\Downloads\cyberpunk3.jpg" style="width:100%" height="100px" width="auto" onclick="currentSlide(3)" alt="NightCity crimes">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="C:\Users\user\Downloads\cyberpunk4.jpg" style="width:100%" height="100px" width="auto" onclick="currentSlide(4)" alt="DayLight NightCity">
+    </div>
+  </div>
+</div>
+
+    <!-- <section id="gallery">
+        <div class="container">
+            <h2>Gallery</h2>
+            <div class="row">
+
+                <div class="col-md-4">
+                    <a href="C:\Users\user\Downloads\cyberpunk1.jpg" data-lightbox="gallery">
+                        <img src="C:\Users\user\Downloads\cyberpunk1.jpg" alt="Gallery Image 1" height="380" width="auto">
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="C:\Users\user\Downloads\cyberpunk2.jpg" data-lightbox="gallery">
+                        <img src="C:\Users\user\Downloads\cyberpunk2.jpg" alt="Gallery Image 2" height="380" width="auto">
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="C:\Users\user\Downloads\cyberpunk3.jpg" data-lightbox="gallery">
+                        <img src="C:\Users\user\Downloads\cyberpunk3.jpg" alt="Gallery Image 3" height="380" width="auto">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <section id="about" class="neonText">
+        <div class="container">
+            <h2 style="text-align: center;">About Us</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="image-container">
+                        <img src="C:\Users\user\Downloads\cyberpunkDLC1.jpg" alt="Image 1">
+                        <div class="overlay">
+                            <p>NightCity</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="image-container">
+                        <img src="C:\Users\user\Downloads\cyberpunkDLC2.jpg" alt="Image 2">
+                        <div class="overlay">
+                            <p>NightCity</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="image-container">
+                        <img src="C:\Users\user\Downloads\cyberpunkDLC3.jpg" alt="Image 3">
+                        <div class="overlay">
+                            <p>NightCity</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function openModal() {
+          document.getElementById("myModal").style.display = "block";
+        }
+        
+        function closeModal() {
+          document.getElementById("myModal").style.display = "none";
+        }
+        
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("demo");
+          var captionText = document.getElementById("caption");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+          captionText.innerHTML = dots[slideIndex-1].alt;
+        }
+        </script>
+
+    <footer>
+        <div class="container" style="text-align: center;">
+            <p>&copy; 2023 Jeff Bootstrap</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
